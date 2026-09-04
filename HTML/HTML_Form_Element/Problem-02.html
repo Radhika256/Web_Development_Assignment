@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AIMS Delhi Hospital - Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1><mark>AIMS Delhi Hospital - Appointment Booking</mark></h1>
+
+    <p>
+        Welcome to AIMS Delhi Hospital. This online appointment form allows
+        patients to request a consultation by providing their personal details,
+        preferred appointment date and time, doctor preference, visit type,
+        communication method and reason for the visit.
+    </p>
+
+     <img src="https://www.biospectrumindia.com/uploads/articles/0e3dc90c78f26aadb296b44d65c6539e-12966.jpg" 
+     alt="AIMS,Delhi Hospital" width="500">
+
+    <h2><mark>Clinic Timings</mark></h2>
+
+    <table border="1">
+        <caption>AIMS Delhi Hospital Timings</caption>
+
+    <tr>
+    <th>Day</th>
+    <th>Opening Time</th>
+    <th>Closing Time</th>
+    </tr>
+
+    <tr>
+    <td>Monday - Friday</td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td></tr>
+
+    <tr>
+    <td>Saturday</td>
+    <td>09:00 AM</td>
+    <td>02:00 PM</td></tr>
+
+    <tr><td>Sunday</td>
+    <td>10:00 AM</td>
+    <td>01:00 PM</td>
+    </tr>
+    </table>
+
+    <h2><mark>Patient Information</mark></h2>
+
+    <form>
+
+   <p>
+    <label for="patientName">Full Name:</label><br>
+    <input type="text" id="patientName" name="patient_name" minlength="3" maxlength="50"
+    pattern="[A-Za-z ]+" required>
+    </p>
+
+    <p> <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required>
+    </p>
+
+    <p> <label for="mobile">Mobile Number:</label><br>
+    <input type="tel" id="mobile" name="mobile_number" minlength="10" maxlength="10"
+    pattern="[0-9]{10}" required>
+    </p>
+
+    <p>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="date_of_birth" min="1900-01-01" max="2026-12-31"
+    required> </p>
+
+    <p>
+    <label for="patientId">Patient ID (Optional):</label><br>
+    <input type="text" id="patientId" name="patient_id" minlength="4" maxlength="15"
+    pattern="[A-Za-z0-9]+"> </p>
+ 
+   <h2><mark>Appointment Details</mark></h2>
+
+    <p>
+    <label for="appointmentDate">Appointment Date:</label><br>
+    <input type="date" id="appointmentDate" name="appointment_date" min="2026-09-05"
+    max="2026-12-31" required></p>
+    
+    <p>
+    <label for="appointmentTime">Appointment Time:</label><br>
+    <inputtype="time" id="appointmentTime" name="appointment_time" min="09:00" max="18:00"
+    required></p>
+
+    <p>
+    <label for="doctor">Select Doctor:</label><br>
+
+        <select id="doctor" name="doctor" required>
+        <option value="">-- Select a Doctor --</option>
+
+        <option value="anita-sharma">
+        Dr. Anita Sharma - General Physician
+        </option>
+
+        <option value="rahul-verma">
+        Dr. Rahul Verma - Cardiologist
+         </option>
+
+        <option value="neha-mehta">
+        Dr. Neha Mehta - Dermatologist
+        </option>
+
+        <option value="arjun-kapoor">
+        Dr. Arjun Kapoor - Orthopedic Specialist
+        </option>
+
+        <option value="priya-singh">
+        Dr. Priya Singh - Pediatrician
+        </option>
+        </select>
+        </p>
+
+    <h2><mark>Visit Type</mark></h2>
+
+    <p>
+    <strong>Select Visit Type:</strong><br>
+
+    <input type="radio" id="newPatient" name="visit_type" value="new_patient" required>
+    <label for="newPatient">New Patient</label>
+    <br>
+
+    <input type="radio" id="followUp" name="visit_type" value="follow_up">
+    <label for="followUp">Follow-up</label><br>
+
+    <input type="radio" id="consultation" name="visit_type" value="consultation">
+    <label for="consultation">Consultation</label>
+    <br>
+
+    <input type="radio" id="emergency" name="visit_type" value="emergency">
+    <label for="emergency">Emergency</label>
+    </p>
+
+    <h2><mark>Preferred Communication</mark></h2>
+
+    <p>
+    <strong>How should the hospital contact you?</strong><br>
+
+    <input type="radio" id="phone" name="communication_method" value="phone" required>
+    <label for="phone">Phone Call</label>
+    <br>
+
+    <input type="radio" id="emailCommunication" name="communication_method" value="email">
+    <label for="emailCommunication">Email</label>
+    <br>
+
+    <input type="radio" id="sms" name="communication_method" value="sms">
+    <label for="sms">SMS</label></p>
+
+    <h2><mark>Reason for Visit</mark></h2>
+
+    <p>
+    <label for="reason">
+    Reason for Visit / Additional Information:
+    </label>
+    <br>
+
+    <textarea id="reason" name="reason_for_visit" rows="6" cols="50" minlength="10"
+    maxlength="500" required></textarea>
+    </p>
+
+    <h2><mark>Appointment Terms</mark></h2>
+    <p><input
+    type="checkbox"
+    id="terms"
+    name="appointment_terms"
+    value="accepted"
+    required>
+
+    <label for="terms">
+    I confirm that the information provided is correct and
+    I accept the appointment terms.
+    </label>
+    </p>
+
+    <p>
+    <input type="submit" value="Submit Appointment Request">
+    <input type="reset" value="Reset Form">
+    </p>
+
+    </form>
+
+    <h2><mark>Hospital Contact and Emergency</mark></h2>
+
+    <p>
+    <b>For appointment-related queries, contact the hospital reception at</b>:
+    +91 9664476567
+    </p>
+
+    <p>
+        <strong>For medical emergencies, call</strong>:
+        <a href="tel:112" target="_blank" rel="noopener noreferrer">
+            112 Emergency Services</a>
+    </p>
+
+</body>
+
+</html>
