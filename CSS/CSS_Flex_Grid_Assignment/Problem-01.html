@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PHOTO GALLERY</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .heading{
+            display:flex;
+            justify-content: space-between;
+            border:2px solid rgb(179, 127, 227);
+            background-color: rgb(179, 127, 227);
+            flex-direction: row;
+            align-items: center;
+            height:70px;
+        }
+        .name{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            line-height:8px;
+        }
+        .name>:nth-child(1){
+            font-size:40px;
+        }
+        .name>:nth-child(2){
+            font-size:25px;
+        }
+        .link{
+            display:inline-flex;
+        }
+        .li{
+            margin:30px;
+        }
+        .link>:nth-child(3){
+            margin-right:0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .photo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            color:rgb(54, 6, 86)
+        }
+        span{
+            color: darkgoldenrod;
+        }
+        .image{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:10px;
+            width:780px;
+            margin:20px 250px;
+        }
+        img{
+            width:250px;
+            height:200px;
+            border:2px solid #999;
+            box-shadow:2px 2px 5px #999;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="name">
+            <h1>GLA</h1>
+            <h2>UNIVERSITY</h2>
+        </div>
+        <div class="link">
+            <div class="li"><a href="#">HOME</a></div>
+            <div class="li"><a href="#">GALLERY</a></div>
+            <div class="li"><a href="#">ABOUT</a></div>
+        </div>
+    </div>
+    <h1 class="photo">PHOTO <span>GALLERY</span></h1>
+    <div class="image">
+        <div class="im"><img src="https://avishekgupta.com/wp-content/uploads/2026/02/the-wrong-charlie-chaplin-won.png" alt="photo gallery"></div>
+        <div class="im"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PZnouEM6PLu8PzFDk4MoC4mfOzpuwIGxycHd_HB-37mSB8qhClimWmI&s=10" alt="photo gallery"></div>
+        <div class="im"><img src="https://esquiresg.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2026/01/travel-cameras.jpg" alt="photo gallery"></div>
+        <div class="im"><img src="https://esquiresg.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2026/01/travel-cameras.jpg" alt="photo gallery"></div>
+        <div class="im"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PZnouEM6PLu8PzFDk4MoC4mfOzpuwIGxycHd_HB-37mSB8qhClimWmI&s=10" alt="photo gallery"></div>
+        <div class="im"><img src="https://avishekgupta.com/wp-content/uploads/2026/02/the-wrong-charlie-chaplin-won.png" alt="photo gallery"></div>
+    </div>
+</body>
+</html>
